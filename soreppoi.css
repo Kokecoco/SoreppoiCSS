@@ -1,0 +1,327 @@
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Typography */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f0f0f0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin-bottom: 10px;
+}
+
+/* Buttons */
+.button {
+    display: inline-block;
+    padding: 8px 16px;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    cursor: pointer;
+    border: none;
+    border-radius: 4px;
+    background-color: #3498db;
+    color: #ffffff;
+    transition: background-color 0.3s ease;
+}
+
+.button:hover {
+    background-color: #2980b9;
+}
+
+/* Cards */
+.card {
+    background-color: #ffffff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 6px;
+    padding: 16px;
+    margin-bottom: 20px;
+}
+
+.card-title {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.card-content {
+    font-size: 14px;
+    line-height: 1.6;
+    color: #333333;
+}
+
+/* Forms */
+.form-control {
+    display: block;
+    width: 100%;
+    padding: 8px;
+    font-size: 14px;
+    border: 1px solid #cccccc;
+    border-radius: 4px;
+    box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1);
+    transition: border-color 0.3s ease;
+}
+
+.form-control:focus {
+    outline: none;
+    border-color: #3498db;
+}
+
+/* Navbar */
+.navbar {
+    background-color: #ffffff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 10px 20px;
+}
+
+.navbar-brand {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333333;
+}
+
+.navbar-nav {
+    list-style-type: none;
+}
+
+.navbar-nav li {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.navbar-nav li a {
+    text-decoration: none;
+    color: #333333;
+    font-size: 16px;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.navbar-nav li a:hover {
+    color: #3498db;
+}
+
+/* Toasts */
+.toast {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #333333;
+    color: #ffffff;
+    padding: 10px 20px;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.toast.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Lists */
+ul {
+    list-style-type: none;
+}
+
+ul li {
+    padding: 10px 0;
+    border-bottom: 1px solid #eeeeee;
+}
+
+/* Grid Layout */
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -10px;
+    margin-right: -10px;
+}
+
+.col {
+    box-sizing: border-box;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+@media (min-width: 600px) {
+    .col.s1 { width: 8.33333%; }
+    .col.s2 { width: 16.66667%; }
+    .col.s3 { width: 25%; }
+    .col.s4 { width: 33.33333%; }
+    .col.s5 { width: 41.66667%; }
+    .col.s6 { width: 50%; }
+    .col.s7 { width: 58.33333%; }
+    .col.s8 { width: 66.66667%; }
+    .col.s9 { width: 75%; }
+    .col.s10 { width: 83.33333%; }
+    .col.s11 { width: 91.66667%; }
+    .col.s12 { width: 100%; }
+}
+
+@media (min-width: 601px) and (max-width: 992px) {
+    .col.m1 { width: 8.33333%; }
+    .col.m2 { width: 16.66667%; }
+    .col.m3 { width: 25%; }
+    .col.m4 { width: 33.33333%; }
+    .col.m5 { width: 41.66667%; }
+    .col.m6 { width: 50%; }
+    .col.m7 { width: 58.33333%; }
+    .col.m8 { width: 66.66667%; }
+    .col.m9 { width: 75%; }
+    .col.m10 { width: 83.33333%; }
+    .col.m11 { width: 91.66667%; }
+    .col.m12 { width: 100%; }
+}
+
+/* PC用 */
+@media (min-width: 993px) {
+    .col.l1 { width: 8.33333%; }
+    .col.l2 { width: 16.66667%; }
+    .col.l3 { width: 25%; }
+    .col.l4 { width: 33.33333%; }
+    .col.l5 { width: 41.66667%; }
+    .col.l6 { width: 50%; }
+    .col.l7 { width: 58.33333%; }
+    .col.l8 { width: 66.66667%; }
+    .col.l9 { width: 75%; }
+    .col.l10 { width: 83.33333%; }
+    .col.l11 { width: 91.66667%; }
+    .col.l12 { width: 100%; }
+}
+
+.offset-s1 { margin-left: 8.33333%; }
+.offset-s2 { margin-left: 16.66667%; }
+.offset-s3 { margin-left: 25%; }
+.offset-s4 { margin-left: 33.33333%; }
+.offset-s5 { margin-left: 41.66667%; }
+.offset-s6 { margin-left: 50%; }
+.offset-s7 { margin-left: 58.33333%; }
+.offset-s8 { margin-left: 66.66667%; }
+.offset-s9 { margin-left: 75%; }
+.offset-s10 { margin-left: 83.33333%; }
+.offset-s11 { margin-left: 91.66667%; }
+
+.offset-m1 { margin-left: 8.33333%; }
+.offset-m2 { margin-left: 16.66667%; }
+.offset-m3 { margin-left: 25%; }
+.offset-m4 { margin-left: 33.33333%; }
+.offset-m5 { margin-left: 41.66667%; }
+.offset-m6 { margin-left: 50%; }
+.offset-m7 { margin-left: 58.33333%; }
+.offset-m8 { margin-left: 66.66667%; }
+.offset-m9 { margin-left: 75%; }
+.offset-m10 { margin-left: 83.33333%; }
+.offset-m11 { margin-left: 91.66667%; }
+
+.offset-l1 { margin-left: 8.33333%; }
+.offset-l2 { margin-left: 16.66667%; }
+.offset-l3 { margin-left: 25%; }
+.offset-l4 { margin-left: 33.33333%; }
+.offset-l5 { margin-left: 41.66667%; }
+.offset-l6 { margin-left: 50%; }
+.offset-l7 { margin-left: 58.33333%; }
+.offset-l8 { margin-left: 66.66667%; }
+.offset-l9 { margin-left: 75%; }
+.offset-l10 { margin-left: 83.33333%; }
+.offset-l11 { margin-left: 91.66667%; }
+
+/* Chips */
+.chip {
+    display: inline-block;
+    padding: 6px 12px;
+    font-size: 14px;
+    background-color: #e0e0e0;
+    color: #333333;
+    border-radius: 16px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+
+/* Hover Effects */
+.hover-effect {
+    transition: transform 0.3s ease;
+}
+
+.hover-effect:hover {
+    transform: translateY(-5px);
+}
+
+/* Ripple Effect */
+.button {
+    position: relative;
+    overflow: hidden;
+}
+
+.button::after {
+    content: "";
+    position: absolute;
+    background-color: rgba(255, 255, 255, 0.4);
+    width: 100%;
+    height: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    border-radius: 50%;
+    pointer-events: none;
+    transition: transform 0.4s ease;
+}
+
+.button:hover::after {
+    transform: translate(-50%, -50%) scale(2);
+}
+
+/* Material Design-like Shadow */
+.material-shadow {
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.08);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .card {
+        width: 100%;
+    }
+}
+
+/* Ripple Effect */
+.ripple {
+    position: absolute;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.6);
+    transform: scale(0);
+    animation: ripple 0.6s linear;
+    pointer-events: none;
+}
+
+@keyframes ripple {
+    to {
+        transform: scale(4);
+        opacity: 0;
+    }
+}
+
+/* Tooltip */
+.tooltip {
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: #ffffff;
+    padding: 8px 12px;
+    font-size: 12px;
+    border-radius: 4px;
+    pointer-events: none;
+    z-index: 1000; /* Ensure tooltip is on top */
+}
+

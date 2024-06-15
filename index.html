@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Soreppoi UI Demo</title>
+        <link rel="stylesheet" href="soreppoi.css">
+        <style>
+        /* Additional styles for demo */
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        h1 {
+            margin-bottom: 20px;
+        }
+        .demo-section {
+            margin-bottom: 40px;
+        }
+    </style>
+    </head>
+    <body>
+        <header class="navbar">
+            <div class="navbar-brand">Soreppoi UI</div>
+            <ul class="navbar-nav">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </header>
+
+        <div class="container">
+            <section class="demo-section">
+                <h1>Buttons</h1>
+                <button class="button ripple-parent">Primary Button</button>
+                <button class="button ripple-parent"
+                    style="background-color: #e74c3c;">Danger Button</button>
+            </section>
+
+            <section class="demo-section">
+                <h1>Cards</h1>
+                <div class="card ripple-parent">
+                    <div class="card-title">Card Title</div>
+                    <div class="card-content">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        Nullam vitae eros eu lectus cursus sodales non in ipsum.
+                    </div>
+                </div>
+            </section>
+
+            <section class="demo-section">
+                <h1>Toasts</h1>
+                <button id="showToastButton" class="button">Show Toast</button>
+            </section>
+
+            <section class="demo-section">
+                <h1>Lists</h1>
+                <ul class="ripple-parent">
+                    <li>List item 1</li>
+                    <li>List item 2</li>
+                    <li>List item 3</li>
+                </ul>
+            </section>
+
+            <section class="demo-section">
+                <h1>Grid Layout</h1>
+                <div class="row">
+                    <div class="col s12 m6 l4">
+                        <div class="card">Item 1</div>
+                    </div>
+                    <div class="col s12 m6 l4">
+                        <div class="card">Item 2</div>
+                    </div>
+                    <div class="col s12 m6 l4">
+                        <div class="card">Item 3</div>
+                    </div>
+                    <div class="col s12 m6 l4">
+                        <div class="card">Item 4</div>
+                    </div>
+                    <div class="col s12 m6 l4">
+                        <div class="card">Item 5</div>
+                    </div>
+                    <div class="col s12 m6 l4">
+                        <div class="card">Item 6</div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="demo-section">
+                <h1>Chips</h1>
+                <div class="chip ripple-parent">Tag 1</div>
+                <div class="chip ripple-parent">Tag 2</div>
+                <div class="chip ripple-parent">Tag 3</div>
+            </section>
+        </div>
+
+        <script src="soreppoi.js" defer></script>
+        <script>
+        // JavaScript for Toast demo
+        document.addEventListener('DOMContentLoaded', function() {
+            const toastButton = document.getElementById('showToastButton');
+            toastButton.addEventListener('click', function() {
+                showToast('This is a toast message.');
+            });
+        });
+    </script>
+    </body>
+</html>
